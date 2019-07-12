@@ -1,5 +1,7 @@
 === README
+Some stupid, jobless wordplay
 
+Command:
 ```
 python3 word_play.py "narendra modi"
 ```
