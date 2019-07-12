@@ -3,3 +3,19 @@
 ```
 python3 word_play.py "narendra modi"
 ```
+
+Expected Output:
+```
+          mayaNk agarwal
+           virAt kohli
+              Rohit sharma
+          yuzvEndra chahal
+        ms dhoNi
+         ravinDra jadeja
+          jaspRit bumrah
+           kedAr jadhav
+bhuvneshwar kuMar
+             mOhammed shami
+              Dinesh karthik
+          hardIk pandya
+```
