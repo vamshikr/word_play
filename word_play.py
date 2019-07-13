@@ -17,7 +17,7 @@ class WordPlay:
         return [name for name in player_names if target[0] in name]
 
     def match(self, target: str, player_names: list) -> list:
-
+        self.total_iterations += 1
         matching_names = self.names_with_match(target, player_names)
 
         if matching_names:
@@ -58,7 +58,9 @@ class WordPlay:
                 print('Not Possible')
                 return False
 
+        self.total_iterations = 0
         dt = self.match(target_name, self.players)
+        print('Total Iterations: ', self.total_iterations )
         if dt:
             dt.reverse()
             self.pretty_print(dt)
