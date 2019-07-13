@@ -37,8 +37,9 @@ class WordPlay:
 
     def pretty_print(self, matched_names: list):
         dt2 = [(letter, name.index(letter), len(name), name) for letter, name in matched_names]
+        max_index_len = max(dt2, key=lambda x: x[1])[1]
         for letter, index, lenn, name in dt2:
-            name = name.rjust(14 + lenn - index)
+            name = name.rjust(max_index_len + lenn - index)
             name = name.replace(letter, "\033[95m{}\033[00m".format(letter.upper()), 1)
             print(name)
 
