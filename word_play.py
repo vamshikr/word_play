@@ -48,8 +48,8 @@ class WordPlay:
         if len(target_name) > len(self.players):
             print('Not Possible')
             return False
-        count_occurrence = defaultdict(int)
 
+        count_occurrence = defaultdict(int)
         for letter in target_name:
             count_occurrence[letter] += 1
 
